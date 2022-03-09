@@ -7,7 +7,7 @@ phases:
             
     build:
         commands:
-            - sam build
+            - sam build --base-dir src/mAPIonLambda/ --template src/mAPIonLambda/serverless.template 
             
     post_build:
         commands:
