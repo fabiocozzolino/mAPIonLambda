@@ -7,8 +7,8 @@ phases:
             
     build:
         commands:
-            - sam build --base-dir src/mAPIonLambda/ --template src/mAPIonLambda/serverless.template 
+            - sam build --base-dir ./src/mAPIonLambda/ --template ./src/mAPIonLambda/serverless.template 
             
     post_build:
         commands:
-            - sam deploy --template-file .aws-sam\build\template.yaml --stack-name mapi-on-lambda --s3-bucket mapi-on-lambda-bucket --parameter-overrides BucketName=mapi-on-lambda-name --capabilities CAPABILITY_IAM
+            - sam deploy --template-file ./.aws-sam/build/template.yaml --stack-name mapi-on-lambda --s3-bucket mapi-on-lambda-bucket --parameter-overrides BucketName=mapi-on-lambda-name --capabilities CAPABILITY_IAM
