@@ -9,6 +9,7 @@ phases:
     build:
         commands:
             #- sam build --base-dir ./src/mAPIonLambda/ --template ./src/mAPIonLambda/serverless.template 
+            - cd src/mAPIonLambda/
             - dotnet lambda deploy-function mAPIonLambda --function-role role
             
     #post_build:
