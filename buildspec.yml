@@ -10,7 +10,7 @@ phases:
         commands:
             #- sam build --base-dir ./src/mAPIonLambda/ --template ./src/mAPIonLambda/serverless.template 
             #- cd src/mAPIonLambda/
-            - dotnet lambda deploy-function mAPIonLambda --project-location ./src/mAPIonLambda/ --function-role MAPIonLAMBDA-role-v11pax7j --region eu-west-1 --function-runtime 6 --config-file ./src/mAPIonLambda/aws-lambda-tools-defaults.json
+            - dotnet lambda deploy-function mAPIonLambda --project-location ./src/mAPIonLambda/ --function-role MAPIonLAMBDA-role-v11pax7j --region eu-west-1 --function-runtime 6 --config-file aws-lambda-tools-defaults.json
             #- dotnet lambda deploy-serverless --project-location ./src/mAPIonLambda/ --template serverless.template --s3-bucket codepipeline-eu-west-1-506243374975 --stack-name MAPIonLAMBDA-cf-stack
             
     #post_build:
