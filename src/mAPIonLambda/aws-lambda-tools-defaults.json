@@ -11,7 +11,7 @@
   "function-runtime":"6",                                               
   "function-memory-size" : 256,                                                     
   "function-timeout" : 30,                                                          
-  "function-handler" : "LambdaTest::LambdaTest.LambdaHandler::handleRequest", 
+  "function-handler" : "mAPIonLambda", 
   "s3-prefix": "mAPIonLambda/",
   "template": "serverless.template",
   "template-parameters": ""
