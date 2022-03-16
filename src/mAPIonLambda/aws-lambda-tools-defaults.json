@@ -11,8 +11,6 @@
   "function-runtime":"6",                                               
   "function-memory-size" : 256,                                                     
   "function-timeout" : 30,                                                          
-  "function-handler" : "mAPIonLambda", 
-  "s3-prefix": "mAPIonLambda/",
-  "template": "serverless.template",
-  "template-parameters": ""
+  "function-handler" : "myAwesomeLambda", 
+  "s3-prefix": "myAwesomeLambda/"
 }
